@@ -7,9 +7,10 @@ from sklearn.ensemble import HistGradientBoostingClassifier
 from sklearn.metrics import mean_squared_error, r2_score
 import streamlit as st
 import json
+import os
 
 # Configuration
-API_KEY = "579b464db66ec23bdd00000100784aed3aeb4f5572f27938a742b76d"  # Register on data.gov.in to get API key
+API_KEY = os.getenv("api_key_data.gov.in")  # Register on data.gov.in to get API key
 BASE_URL = "https://api.data.gov.in/resource/variety-wise-daily-market-prices-data-commodity"  # You'll need the exact endpoint
 
 # Function to fetch data from the API
