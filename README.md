@@ -19,5 +19,5 @@ AgriForecast is a data-driven platform that leverages open government agricultur
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/yourusername/AgriForecast.git
+   git clone https://github.com/Abhi-449/AgriForecast.git
    cd AgriForecast
