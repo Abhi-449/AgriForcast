@@ -18,7 +18,7 @@ MODELS_DIR = "models/"
 # Ensure directories exist
 os.makedirs(DATA_DIR, exist_ok=True)
 os.makedirs(MODELS_DIR, exist_ok=True)
-api_key = "579b464db66ec23bdd00000100784aed3aeb4f5572f27938a742b76d"
+api_key = os.getenv("data.gov.in_api_key")
 def load_or_fetch_data(resource_id, crop_name, region, start_date, end_date, api_key=api_key, refresh=False):
     """
     Load data from local storage or fetch from API if not available
